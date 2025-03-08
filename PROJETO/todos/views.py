@@ -10,5 +10,4 @@ def todo_list_old(request):
 
 def todo_list(request): 
     todos = Todo.objects.all()
-    alunos = ['1. Ana', '2. José', '3. Bia'] 
     return render(request, "todos/todo_list.html", {"todos":todos});
